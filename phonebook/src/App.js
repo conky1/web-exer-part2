@@ -7,7 +7,7 @@ import addNewPerson from './components/ServerCon'
 import Notification from './components/Notification'
 
 
-//import addNote from './components/AddNote'
+
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -27,7 +27,7 @@ const App = () => {
 
 
   }, [])
-  // console.log('render', persons.length, 'persons')
+  console.log('render', persons.length, 'persons')
 
 
 
@@ -37,17 +37,14 @@ const App = () => {
     if (filterDupArr.length !== 0) {
 
       setErrorMessage(newName + ' is already added to phonebook')
-      // alert(newName + ' is already added to phonebook')
-      //console.log('button clicked', event.target)
+      
     }
     else {
       const changeName = {
         name: newName,
         number: newphone
       }
-      /* setPersons(persons.concat(changeName))
-       setNewName('')
-       setNewPhone('')*/
+      
       addNewPerson(changeName, setPersons, setNewName, setNewPhone, persons)
     }
   }
