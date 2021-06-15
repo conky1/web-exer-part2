@@ -13,8 +13,8 @@ const App = () => {
   const [ notification, setNotification] = useState(null)
   const [ success, setSuccess] = useState(null)
 
-  useEffect(() => {
-    getPersons()
+  useEffect(( getPersons) => {
+   
   }, [])
 
 
