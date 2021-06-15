@@ -1,5 +1,7 @@
 h1 {
-  color: rgb(184, 19, 19);
+  color: firebrick;
+  text-shadow: 8px 8px blue;
+
   font-style: initial;
 }
 
