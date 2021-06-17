@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import personsService from './services/persons'
 import Filter from './components/Filter'
 import NewPerson from './components/NewPerson'
@@ -13,9 +13,7 @@ const App = () => {
   const [ notification, setNotification] = useState(null)
   const [ success, setSuccess] = useState(null)
 
-  useEffect(( getPersons) => {
-   
-  }, [])
+  //
 
 
   const getPersons = () => {
@@ -26,6 +24,9 @@ const App = () => {
       })
       .catch(error => showMessage("Data search unsuccesful", false ))
   }
+  useEffect(getPersons,[])/* => {
+    //getPersons()
+  }, [])*/
 
 
 
