@@ -1,8 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = /*'http://localhost:3000/api/persons'*/'http://localhost:3000/api/persons'
-
-//const baseUrl = '/api/persons'
+const baseUrl = '/api/persons'
 
 export const getAll = async () => {
   const request = axios.get(baseUrl)
